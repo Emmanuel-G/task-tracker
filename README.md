@@ -1,2 +1,2 @@
-# task-tracker
-Web application for tracking daily tasks.
+# Task Tracker
+Web application for tracking daily tasks
