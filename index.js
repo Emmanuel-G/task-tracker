@@ -10,7 +10,7 @@ server.engine('.hbs', exphbs({extname: '.hbs'}));
 server.set('view engine', '.hbs');
 
 server.get("/", (req, res) => {
-    res.send("Daily Task Tracker App");
+    res.render("home");
 })
 
 server.listen(port, () => {
