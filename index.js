@@ -1,9 +1,13 @@
 //Express-js server
 const express = require("express");
+const exphbs = require("express-handlebars");
 require("dotenv").config();
 
 const server = express();
 const port = process.env.PORT || 5000;
+
+server.engine('.hbs', exphbs({extname: '.hbs'}));
+server.set('view engine', '.hbs');
 
 server.get("/", (req, res) => {
     res.send("Daily Task Tracker App");
